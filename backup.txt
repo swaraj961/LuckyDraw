@@ -1,0 +1,64 @@
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+#include<stdio.h>
+#include<windows.h>
+void main()
+{
+system("color 0a");
+randomize();
+int rd;
+char name[10];
+int n=100;
+char loc[20];
+
+int c;
+cout<<"\n";
+cout<<"\t\t~~~~WELCOME TO RANDOM LUCKY DRAW ~~~~\n\n ";
+
+cout<<"\t\t *********WIN EXCITED $PRIZES ********\n\n";
+cout<<"  ~~1:>\tApple Iphone 7 256GB  \n\n";
+cout<<"  ~~2:>\t HP i5-Laptop\n\n";
+cout<<"  ~~3:>\t amazon rs500 giftcard\n\n";
+
+cout<<"\t***** Total Number of Tickets Sold Are **** = "<<n;
+
+cout<<"\n\n";
+
+cout<<"\t**Enter your Name** =";
+gets(name);
+cout<<"\n";
+cout<<"\t*Enter your Location* =";
+gets(loc);
+cout<<"\n\n";
+
+cout<<"\t**Enter your (Two Digit) Ticket Number**= ";
+cin>>c;
+rd=random(n);
+ system("color 0a");
+ cout<<"\n\n\n\t\t\t\tPlease wait while loading\n\n";
+ char a=177, b=219;
+ cout<<"\t\t\t\t";
+ for (int i=0;i<=15;i++)
+ cout<<a;
+ cout<<"\r";
+ cout<<"\t\t\t\t";
+ for (int i=0;i<=15;i++)
+ {
+  cout<<b;
+  for (int j=0;j<=1e9;j++);
+ }
+
+cout<<"\n";
+cout<<"\t\n WOW ! Random lucky winner is ticket number="<<rd;
+cout<<"\n";
+if (rd==c)
+cout<<"\t\n***~~~Great You WIn IPHONE 7 256 GB ~~~***";
+else
+cout<<"\t\n\n ~~~ Sorry "<<name<<" :( BadLuck must try next time !!\n";
+cout<<"\t\t\t\n\n  ^_^ THANKS TO PARTICIPATE IN LUCKYDRAW ^_^ \n\n";
+system("pause");
+getch();
+}
+
+
